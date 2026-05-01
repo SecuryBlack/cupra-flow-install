@@ -14,7 +14,7 @@ function Write-Warn    { param($msg) Write-Host "[cupraflow] $msg" -ForegroundCo
 function Fail          { param($msg) Write-Host "[cupraflow] ERROR: $msg" -ForegroundColor Red; exit 1 }
 
 # Constants
-$GithubRepo  = "sb-mcampoe/cupraflow"
+$GithubRepo  = "sb-mcampoe/cupra-flow"
 $BinaryName  = "cupraflow.exe"
 $InstallDir  = "$env:ProgramFiles\CupraFlow"
 $ConfigDir   = "$env:ProgramData\CupraFlow"
@@ -58,7 +58,7 @@ if (-not $version) { Fail "Could not determine latest version." }
 Write-Info "Latest version: $version"
 
 # Download binary
-$assetName   = "cupraflow-$target.zip"
+$assetName   = "cupra-flow-$target.zip"
 $downloadUrl = "https://github.com/$GithubRepo/releases/download/$version/$assetName"
 $checksumUrl = "$downloadUrl.sha256"
 $tmpDir      = [System.IO.Path]::GetTempPath() + [System.IO.Path]::GetRandomFileName()
@@ -115,7 +115,7 @@ backends = []
 channel = "stable"
 check_on_startup = true
 check_interval = 24
-github_repo = "sb-mcampoe/cupraflow"
+github_repo = "sb-mcampoe/cupra-flow"
 "@ | Set-Content -Path $ConfigFile -Encoding UTF8
         Write-Success "Config written"
     } else {
