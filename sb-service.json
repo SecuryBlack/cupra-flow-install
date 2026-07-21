@@ -1,0 +1,8 @@
+{
+  "name": "CupraFlow Installer",
+  "description": "Cloudflare Worker para el script de instalación de CupraFlow",
+  "type": "wrangler",
+  "role": "installer",
+  "port": 8785,
+  "start": "npx wrangler dev --port 8785"
+}

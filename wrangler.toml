@@ -1,0 +1,7 @@
+name = "cupra-flow-install"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+[[routes]]
+pattern = "install.cupraflow.dev/*"
+zone_name = "cupraflow.dev"
