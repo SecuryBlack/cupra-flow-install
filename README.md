@@ -24,3 +24,10 @@ irm https://install.cupraflow.dev/windows | iex
 
 - `install.ps1` — PowerShell install script
 - `index.html` — Landing page with copy-paste one-liner
+
+---
+
+## License
+
+CupraFlow Install is licensed under the [Apache License, Version 2.0](LICENSE).
+
