@@ -7,7 +7,7 @@
     "dev": "wrangler dev"
   },
   "devDependencies": {
-    "wrangler": "^4.113.0"
+    "wrangler": "^4.118.0"
   },
   "license": "Apache-2.0"
 }
